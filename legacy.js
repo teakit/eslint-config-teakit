@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  extends: [ './lib/legacy' ].map(require.resolve),
+  extends: ["./lib/legacy"].map(require.resolve),
   rules: {},
 };

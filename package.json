@@ -1,0 +1,60 @@
+{
+  "name": "eslint-config-teakit",
+  "version": "0.1.0",
+  "description": "Developer Tools for Project Teakit",
+  "homepage": "https://teakit.org",
+  "repository": "git@github.com:teakit/eslint-config-teakit",
+  "bugs": "https://github.com/teakit/eslint-config-teakit/issues",
+  "main": "index",
+  "files": [
+    ".eslintrc",
+    "index.js",
+    "legacy.js",
+    "typescript.js",
+    "lib"
+  ],
+  "scripts": {
+    "clean": "find . \\( -name 'node_modules' -or -name 'yarn.lock' -or -name 'yarn-error.log' \\) -prune -exec rm -rf '{}' +",
+    "autod": "autod",
+    "lint": "eslint test/*.test.js lib *.js",
+    "test": "egg-bin test"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-eggache": "^1.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsdoc": "^4.1.1",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.1.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "autod": "^3.0.1",
+    "coffee": "^5.1.0",
+    "egg-bin": "^1.0.0",
+    "egg-ci": "^1.8.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.10.0",
+    "kill-port": "^1.6.1",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.5.3"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "docs/*",
+    "dist/*",
+    "build/*",
+    "coverage/*",
+    "fixtures/*",
+    "umd/*"
+  ],
+  "engines": {
+    "node": ">=12.14.0",
+    "yarn": ">=1.5.1"
+  }
+}

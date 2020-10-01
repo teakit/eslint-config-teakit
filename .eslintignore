@@ -2,9 +2,9 @@
 
 node_modules/**
 build/**
+dist/**
 server/**
 library/**
 publish/**
 umd/**
-lib/**
 yarn.lock

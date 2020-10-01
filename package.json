@@ -23,7 +23,7 @@
   "scripts": {
     "clean": "find . \\( -name 'node_modules' -or -name 'yarn.lock' -or -name 'yarn-error.log' \\) -prune -exec rm -rf '{}' +",
     "autod": "autod",
-    "lint": "eslint test/*.test.js lib *.js",
+    "lint": "npx eslint test/*.test.js lib *.js",
     "test": "egg-bin test"
   },
   "dependencies": {

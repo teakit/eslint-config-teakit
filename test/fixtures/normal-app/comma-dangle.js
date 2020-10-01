@@ -1,18 +1,15 @@
-'use strict';
+"use strict";
 
 let foo = {
-  bar: 'baz',
-  qux: 'quux',
+  bar: "baz",
+  qux: "quux",
 };
 
-foo = { bar: 'baz', qux: 'quux' };
+foo = { bar: "baz", qux: "quux" };
 
-foo = [
-  1,
-  2,
-];
+foo = [1, 2];
 
-foo = [ 1, 2 ];
+foo = [1, 2];
 
 console.log(foo);
 

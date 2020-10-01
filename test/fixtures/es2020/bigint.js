@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const i = 1n;
 console.log(i);

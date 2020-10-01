@@ -1,12 +1,6 @@
-'use strict';
+"use strict";
 
-function bar(
-  a,
-  b,
-) {
+function bar(a, b) {
   console.log(a, b);
 }
-bar(
-  1,
-  2,
-);
+bar(1, 2);
